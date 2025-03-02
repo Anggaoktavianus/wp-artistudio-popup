@@ -1,114 +1,34 @@
-WordPress Pop-Up Plugin
+📌 Deskripsi
 
-Overview
+Plugin ini adalah plugin WordPress yang menampilkan pop-up pada halaman tertentu menggunakan Custom Post Type (CPT) dan Custom Fields. Plugin ini menggunakan React.js untuk tampilan pop-up dan WordPress REST API untuk mengambil data pop-up dari backend.
 
-This WordPress plugin allows users to create and display pop-ups on selected pages using Custom Post Types (CPT) and WordPress REST API. The front-end is built using React and styled with SASS for a modern user experience.
+🚀 Fitur
 
-Features
+1.Menggunakan Object-Oriented Programming (OOP) dengan PHP Namespace, Trait, dan Interface.
 
-Custom Post Type (CPT) "Popups" for managing pop-up content
+2.Memanfaatkan Singleton Pattern untuk pengelolaan instance.
 
-Custom fields to specify title, description, and target page
+3.Menyediakan Custom Post Type (CPT) untuk mengelola pop-up tanpa plugin eksternal.
 
-REST API endpoint: /wp-json/artistudio/v1/popup (accessible only to logged-in users)
+4.Frontend menggunakan React.js dan dihubungkan dengan backend melalui WordPress REST API.
 
-React-based pop-up display with animations
+5.API hanya dapat diakses oleh pengguna yang sudah login untuk keamanan.
 
-SASS-based styling for a sleek UI
+⚙️ Instalasi
 
-Uses the Singleton pattern and PHP namespaces for optimized code structure
+Clone repositori ini ke folder plugin WordPress:
 
-Installation
+git clone https://github.com/username/my-popup-plugin.git wp-content/plugins/my-popup-plugin
 
-Prerequisites
+Aktifkan plugin dari dashboard WordPress:
 
-WordPress installed on a local or remote server
+Buka Dashboard → Plugins → My Pop-up Plugin → Activate
 
-Node.js and npm installed for React and Webpack
+Flush Permalinks:
 
-Steps
+Masuk ke Settings → Permalinks → Klik Save Changes tanpa mengubah apa pun.
 
-Clone the repository:
-
-git clone https://github.com/yourusername/wp-artistudio-popup.git
-
-Navigate to the plugin directory:
-
-cd wp-artistudio-popup
-
-Install dependencies:
-
+Jalankan build React untuk frontend:
+cd wp-content/plugins/my-popup-plugin
 npm install
-
-Build the JavaScript bundle:
-
-npx webpack --mode=production
-
-Upload the plugin folder to WordPress:
-
-Copy wp-artistudio-popup/ to wp-content/plugins/
-
-Activate the Plugin:
-
-Go to WordPress Dashboard > Plugins and activate "WordPress Pop-Up Plugin"
-
-Usage
-
-Create a Pop-Up:
-
-Navigate to Popups > Add New
-
-Enter the Title and Description
-
-Select the target page where the pop-up should be displayed
-
-Publish the pop-up
-
-Test the Pop-Up:
-
-Open the target page (while logged in) and verify that the pop-up appears
-
-REST API Endpoint
-
-Endpoint: /wp-json/artistudio/v1/popup
-
-Method: GET
-
-Authentication: Required (only logged-in users can access data)
-
-Response Format:
-
-[
-  {
-    "id": 1,
-    "title": "Example Pop-Up",
-    "content": "This is a test pop-up.",
-    "page_id": 5
-  }
-]
-
-Code Structure
-
-wp-artistudio-popup/
-│── assets/
-│   ├── js/popup.js       # Compiled React bundle
-│── includes/
-│   ├── class-popup.php   # Pop-Up CPT definition
-│   ├── rest-api.php      # Custom REST API endpoint
-│── src/
-│   ├── components/
-│   │   ├── Popup.jsx     # React component for pop-up
-│   ├── styles/
-│   │   ├── popup.scss    # SASS styles for pop-up
-│   ├── App.jsx           # React app entry point
-│── wp-artistudio-popup.php # Main plugin file
-│── webpack.config.js     # Webpack configuration
-
-Contributing
-
-If you wish to contribute, feel free to fork the repository and submit a pull request.
-
-License
-
-This project is open-source and licensed under the MIT License.
-
+npm run build
