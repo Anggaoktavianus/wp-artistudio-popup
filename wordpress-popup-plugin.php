@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: wp-artistudio-popup
- * Plugin URI: https://github.com/your-repo/wp-artistudio-popup
+ * Plugin URI: https://github.com/Anggaoktavianus/wp-artistudio-popup.git
  * Description: Plugin untuk menampilkan pop-up di halaman tertentu dengan React dan REST API.
  * Version: 1.0.0
  * Author: Angga Oktavianus
