@@ -18,7 +18,7 @@ Plugin ini adalah plugin WordPress yang menampilkan pop-up pada halaman tertentu
 
 Clone repositori ini ke folder plugin WordPress:
 
-git clone https://github.com/username/my-popup-plugin.git wp-content/plugins/my-popup-plugin
+git clone https://github.com/Anggaoktavianus/wp-artistudio-popup.git
 
 Aktifkan plugin dari dashboard WordPress:
 
@@ -29,6 +29,18 @@ Flush Permalinks:
 Masuk ke Settings → Permalinks → Klik Save Changes tanpa mengubah apa pun.
 
 Jalankan build React untuk frontend:
-cd wp-content/plugins/my-popup-plugin
-npm install
-npm run build
+<ul>
+  <li>cd wp-content/plugins/my-popup-plugin</li>
+  <li>npm install</li>
+  <li>npm run build</li>
+</ul>
+
+Preview
+1. Install plugin
+<img width="1241" alt="Screenshot 2025-03-02 at 14 06 12" src="https://github.com/user-attachments/assets/f5b381e9-ed14-4c9f-97cd-69857a5013fd" />
+2. CPT
+   <img width="1283" alt="Screenshot 2025-03-02 at 14 06 26" src="https://github.com/user-attachments/assets/7c9f0b46-d0c7-46d1-ba8d-1431246d4b5f" />
+
+4. Popup pada page wordpress
+<img width="435" alt="Screenshot 2025-03-02 at 14 06 37" src="https://github.com/user-attachments/assets/589db71c-5767-4482-be3e-39e4c539c04c" />
+
